@@ -1,0 +1,216 @@
+Number;FieldOfResearch;Level;LevelA_Number;LevelA_FieldOfResearch;LevelB_Number;LevelB_FieldOfResearch;FieldOfResearchVersion;Level1_Number;Level1_Discipline;Level2_Number;Level2_Discipline;Level3_Number;Level3_Discipline
+3602;Creative and professional writing;2;36;Creative Arts and Writing;3602;Creative and professional writing;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+4016;Materials engineering;2;40;Engineering;4016;Materials engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20505;Material Sciences
+3199;Other biological sciences;2;31;Biological Sciences;3199;Other biological sciences;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;NA;NA
+5106;Nuclear and plasma physics;2;51;Physical Sciences;5106;Nuclear and plasma physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;NA;NA
+4011;Environmental engineering;2;40;Engineering;4011;Environmental engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;NA;NA
+3904;Specialist studies in education;2;39;Education;3904;Specialist studies in education;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10104;Education and learning sciences, subject-specific education
+4299;Other health sciences;2;42;Health Sciences;4299;Other health sciences;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+5002;History and philosophy of specific fields;2;50;Philosophy and Religious Studies;5002;History and philosophy of specific fields;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;NA;NA
+5110;Synchrotrons and accelerators;2;51;Physical Sciences;5110;Synchrotrons and accelerators;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20403;Particle Physics
+4303;Historical studies;2;43;History, Heritage and Archaeology;4303;Historical studies;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;NA;NA
+3106;Industrial biotechnology;2;31;Biological Sciences;3106;Industrial biotechnology;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;NA;NA
+5103;Classical physics;2;51;Physical Sciences;5103;Classical physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;NA;NA
+3210;Nutrition and dietetics;2;32;Biomedical and Clinical Sciences;3210;Nutrition and dietetics;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+3403;Macromolecular and materials chemistry;2;34;Chemical Sciences;3403;Macromolecular and materials chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;20303;Inorganic Chemistry
+3401;Analytical chemistry;2;34;Chemical Sciences;3401;Analytical chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;NA;NA
+3705;Geology;2;37;Earth Sciences;3705;Geology;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20800;Earth Sciences;20801;Geology
+3213;Paediatrics;2;32;Biomedical and Clinical Sciences;3213;Paediatrics;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30707;Paediatrics
+3406;Physical chemistry;2;34;Chemical Sciences;3406;Physical chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;20301;Physical Chemistry
+4002;Automotive engineering;2;40;Engineering;4002;Automotive engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20511;Other disciplines of Engineering Sciences
+4008;Electrical engineering;2;40;Engineering;4008;Electrical engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20504;Electrical Engineering
+4101;Climate change impacts and adaptation;2;41;Environmental Sciences;4101;Climate change impacts and adaptation;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20704;Climatology. Atmospherical Chemistry, Aeronomy
+4010;Engineering practice and education;2;40;Engineering;4010;Engineering practice and education;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10104;Education and learning sciences, subject-specific education
+4007;Control engineering, mechatronics and robotics;2;40;Engineering;4007;Control engineering, mechatronics and robotics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;NA;NA
+5102;Atomic, molecular and optical physics;2;51;Physical Sciences;5102;Atomic, molecular and optical physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;NA;NA;NA;NA
+3499;Other chemical sciences;2;34;Chemical Sciences;3499;Other chemical sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;NA;NA
+4799;Other language, communication and culture;2;47;Language, Communication and Culture;4799;Other language, communication and culture;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+51;Physical Sciences;1;51;Physical Sciences;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20409;Other disciplines of Physics
+4106;Soil sciences;2;41;Environmental Sciences;4106;Soil sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20701;Pedology
+3706;Geophysics;2;37;Earth Sciences;3706;Geophysics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20800;Earth Sciences;20802;Geophysics
+4005;Civil engineering;2;40;Engineering;4005;Civil engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20501;Civil Engineering
+4702;Cultural studies;2;47;Language, Communication and Culture;4702;Cultural studies;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+4611;Machine learning;2;46;Information and Computing Sciences;4611;Machine learning;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4406;Human geography;2;44;Human Society;4406;Human geography;ANZSRC 2020;10000;Humanities and Social Sciences;10400;Ethnology, social and human geography;10206;Social geography and ecology
+5202;Biological psychology;2;52;Psychology;5202;Biological psychology;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10105;Psychology
+4602;Artificial intelligence;2;46;Information and Computing Sciences;4602;Artificial intelligence;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4902;Mathematical physics;2;49;Mathematical Sciences;4902;Mathematical physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+5001;Applied ethics;2;50;Philosophy and Religious Studies;5001;Applied ethics;ANZSRC 2020;10000;Humanities and Social Sciences;10200;Linguistics and literature, philosophy;10101;Philosophy
+4201;Allied health and rehabilitation science;2;42;Health Sciences;4201;Allied health and rehabilitation science;ANZSRC 2020;30000;Biology and Medicine;30900;Social Medicine;NA;NA
+4999;Other mathematical sciences;2;49;Mathematical Sciences;4999;Other mathematical sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+4207;Sports science and exercise;2;42;Health Sciences;4207;Sports science and exercise;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30721;Sport Medicine
+3108;Plant biology;2;31;Biological Sciences;3108;Plant biology;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30201;Botany
+4802;Environmental and resources law;2;48;Law and Legal Studies;4802;Environmental and resources law;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+3702;Climate change science;2;37;Earth Sciences;3702;Climate change science;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20704;Climatology. Atmospherical Chemistry, Aeronomy
+5205;Social and personality psychology;2;52;Psychology;5205;Social and personality psychology;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10105;Psychology
+4807;Public law;2;48;Law and Legal Studies;4807;Public law;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+4104;Environmental management;2;41;Environmental Sciences;4104;Environmental management;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;NA;NA
+33;Built Environment and Design;1;33;Built Environment and Design;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10407;Architecture and Social urban science
+3708;Oceanography;2;37;Earth Sciences;3708;Oceanography;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20706;Oceanography
+40;Engineering;1;40;Engineering;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20511;Other disciplines of Engineering Sciences
+3104;Evolutionary biology;2;31;Biological Sciences;3104;Evolutionary biology;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30203;Paleontology (biol.)
+3214;Pharmacology and pharmaceutical sciences;2;32;Biomedical and Clinical Sciences;3214;Pharmacology and pharmaceutical sciences;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+3206;Medical biotechnology;2;32;Biomedical and Clinical Sciences;3206;Medical biotechnology;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30714;Biomedical Engineering
+3502;Banking, finance and investment;2;35;Commerce, Management, Tourism and Services;3502;Banking, finance and investment;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4204;Midwifery;2;42;Health Sciences;4204;Midwifery;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10602;Health
+4407;Policy and administration;2;44;Human Society;4407;Policy and administration;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+3899;Other economics;2;38;Economics;3899;Other economics;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4205;Nursing;2;42;Health Sciences;4205;Nursing;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10602;Health
+4901;Applied mathematics;2;49;Mathematical Sciences;4901;Applied mathematics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+3704;Geoinformatics;2;37;Earth Sciences;3704;Geoinformatics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20800;Earth Sciences;NA;NA
+4402;Criminology;2;44;Human Society;4402;Criminology;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;NA;NA
+32;Biomedical and Clinical Sciences;1;32;Biomedical and Clinical Sciences;NA;NA;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+3215;Reproductive medicine;2;32;Biomedical and Clinical Sciences;3215;Reproductive medicine;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30706;Gynaecology
+3209;Neurosciences;2;32;Biomedical and Clinical Sciences;3209;Neurosciences;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+3105;Genetics;2;31;Biological Sciences;3105;Genetics;ANZSRC 2020;30000;Biology and Medicine;30100;Basic Biological Research;30104;Genetics
+4302;Heritage, archive and museum studies;2;43;History, Heritage and Archaeology;4302;Heritage, archive and museum studies;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;NA;NA
+4609;Information systems;2;46;Information and Computing Sciences;4609;Information systems;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+3709;Physical geography and environmental geoscience;2;37;Earth Sciences;3709;Physical geography and environmental geoscience;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;NA;NA;NA;NA
+4608;Human-centred computing;2;46;Information and Computing Sciences;4608;Human-centred computing;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+44;Human Society;1;44;Human Society;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;NA;NA
+4401;Anthropology;2;44;Human Society;4401;Anthropology;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+4899;Other law and legal studies;2;48;Law and Legal Studies;4899;Other law and legal studies;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+3407;Theoretical and computational chemistry;2;34;Chemical Sciences;3407;Theoretical and computational chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;NA;NA
+3102;Bioinformatics and computational biology;2;31;Biological Sciences;3102;Bioinformatics and computational biology;ANZSRC 2020;30000;Biology and Medicine;30100;Basic Biological Research;NA;NA
+3001;Agricultural biotechnology;2;30;Agricultural, Veterinary and Food Sciences;3001;Agricultural biotechnology;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20509;Agricultural Engineering
+4705;Literary studies;2;47;Language, Communication and Culture;4705;Literary studies;ANZSRC 2020;10000;Humanities and Social Sciences;10200;Linguistics and literature, philosophy;NA;NA
+3999;Other education;2;39;Education;3999;Other education;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;NA;NA
+39;Education;1;39;Education;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;NA;NA
+3504;Commercial services;2;35;Commerce, Management, Tourism and Services;3504;Commercial services;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4410;Sociology;2;44;Human Society;4410;Sociology;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10201;Sociology
+3103;Ecology;2;31;Biological Sciences;3103;Ecology;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30207;Ecology
+52;Psychology;1;52;Psychology;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10105;Psychology
+3003;Animal production;2;30;Agricultural, Veterinary and Food Sciences;3003;Animal production;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30209;Animal Breeding
+4006;Communications engineering;2;40;Engineering;4006;Communications engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4704;Linguistics;2;47;Language, Communication and Culture;4704;Linguistics;ANZSRC 2020;10000;Humanities and Social Sciences;10200;Linguistics and literature, philosophy;NA;NA
+4017;Mechanical engineering;2;40;Engineering;4017;Mechanical engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20502;Mechanical Engineering
+5104;Condensed matter physics;2;51;Physical Sciences;5104;Condensed matter physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20404;Condensed Matter Physics
+3799;Other earth sciences;2;37;Earth Sciences;3799;Other earth sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20800;Earth Sciences;20809;Other disciplines of Earth Sciences
+50;Philosophy and Religious Studies;1;50;Philosophy and Religious Studies;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;NA;NA
+3604;Performing arts;2;36;Creative Arts and Writing;3604;Performing arts;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;NA;NA
+3703;Geochemistry;2;37;Earth Sciences;3703;Geochemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20800;Earth Sciences;20803;Geochemistry
+4605;Data management and data science;2;46;Information and Computing Sciences;4605;Data management and data science;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+42;Health Sciences;1;42;Health Sciences;NA;NA;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+31;Biological Sciences;1;31;Biological Sciences;NA;NA;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;NA;NA
+3603;Music;2;36;Creative Arts and Writing;3603;Music;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10405;Musicology
+3009;Veterinary sciences;2;30;Agricultural, Veterinary and Food Sciences;3009;Veterinary sciences;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30713;Veterinary Medicine
+3302;Building;2;33;Built Environment and Design;3302;Building;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10407;Architecture and Social urban science
+3601;Art history, theory and criticism;2;36;Creative Arts and Writing;3601;Art history, theory and criticism;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10404;Visual arts and Art history
+4606;Distributed computing and systems software;2;46;Information and Computing Sciences;4606;Distributed computing and systems software;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4103;Environmental biotechnology;2;41;Environmental Sciences;4103;Environmental biotechnology;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20511;Other disciplines of Engineering Sciences
+3699;Other creative arts and writing;2;36;Creative Arts and Writing;3699;Other creative arts and writing;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;NA;NA
+3202;Clinical sciences;2;32;Biomedical and Clinical Sciences;3202;Clinical sciences;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;NA;NA
+3402;Inorganic chemistry;2;34;Chemical Sciences;3402;Inorganic chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;20303;Inorganic Chemistry
+3201;Cardiovascular medicine and haematology;2;32;Biomedical and Clinical Sciences;3201;Cardiovascular medicine and haematology;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+3107;Microbiology;2;31;Biological Sciences;3107;Microbiology;ANZSRC 2020;30000;Biology and Medicine;30100;Basic Biological Research;30107;Experimental Microbiology
+3399;Other built environment and design;2;33;Built Environment and Design;3399;Other built environment and design;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10407;Architecture and Social urban science
+3301;Architecture;2;33;Built Environment and Design;3301;Architecture;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10407;Architecture and Social urban science
+3606;Visual arts;2;36;Creative Arts and Writing;3606;Visual arts;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;NA;NA
+4904;Pure mathematics;2;49;Mathematical Sciences;4904;Pure mathematics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+3212;Ophthalmology and optometry;2;32;Biomedical and Clinical Sciences;3212;Ophthalmology and optometry;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30710;Ophthalmology
+3508;Tourism;2;35;Commerce, Management, Tourism and Services;3508;Tourism;ANZSRC 2020;10000;Humanities and Social Sciences;10400;Ethnology, social and human geography;10206;Social geography and ecology
+4019;Resources engineering and extractive metallurgy;2;40;Engineering;4019;Resources engineering and extractive metallurgy;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20505;Material Sciences
+4408;Political science;2;44;Human Society;4408;Political science;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10202;Political science
+5199;Other physical sciences;2;51;Physical Sciences;5199;Other physical sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20409;Other disciplines of Physics
+4804;Law in context;2;48;Law and Legal Studies;4804;Law in context;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+4001;Aerospace engineering;2;40;Engineering;4001;Aerospace engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20511;Other disciplines of Engineering Sciences
+3505;Human resources and industrial relations;2;35;Commerce, Management, Tourism and Services;3505;Human resources and industrial relations;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4613;Theory of computation;2;46;Information and Computing Sciences;4613;Theory of computation;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+3211;Oncology and carcinogenesis;2;32;Biomedical and Clinical Sciences;3211;Oncology and carcinogenesis;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+3208;Medical physiology;2;32;Biomedical and Clinical Sciences;3208;Medical physiology;ANZSRC 2020;30000;Biology and Medicine;30300;Basic Medical Sciences;30305;Physiology : other topics
+5003;Philosophy;2;50;Philosophy and Religious Studies;5003;Philosophy;ANZSRC 2020;10000;Humanities and Social Sciences;10200;Linguistics and literature, philosophy;10101;Philosophy
+5109;Space sciences;2;51;Physical Sciences;5109;Space sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20200;Astronomy, Astrophysics and Space Sciences;NA;NA
+5099;Other philosophy and religious studies;2;50;Philosophy and Religious Studies;5099;Other philosophy and religious studies;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;NA;NA
+3303;Design;2;33;Built Environment and Design;3303;Design;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;NA;NA
+3007;Forestry sciences;2;30;Agricultural, Veterinary and Food Sciences;3007;Forestry sciences;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30205;Agricultural and Forestry Sciences
+3903;Education systems;2;39;Education;3903;Education systems;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10104;Education and learning sciences, subject-specific education
+5101;Astronomical sciences;2;51;Physical Sciences;5101;Astronomical sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20200;Astronomy, Astrophysics and Space Sciences;NA;NA
+5299;Other psychology;2;52;Psychology;5299;Other psychology;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10105;Psychology
+3299;Other biomedical and clinical sciences;2;32;Biomedical and Clinical Sciences;3299;Other biomedical and clinical sciences;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+4703;Language studies;2;47;Language, Communication and Culture;4703;Language studies;ANZSRC 2020;10000;Humanities and Social Sciences;10200;Linguistics and literature, philosophy;NA;NA
+4009;Electronics, sensors and digital hardware;2;40;Engineering;4009;Electronics, sensors and digital hardware;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+41;Environmental Sciences;1;41;Environmental Sciences;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20709;Other disciplines of Environmental Sciences
+3006;Food sciences;2;30;Agricultural, Veterinary and Food Sciences;3006;Food sciences;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+5203;Clinical and health psychology;2;52;Psychology;5203;Clinical and health psychology;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10105;Psychology
+3507;Strategy, management and organisational behaviour;2;35;Commerce, Management, Tourism and Services;3507;Strategy, management and organisational behaviour;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4499;Other human society;2;44;Human Society;4499;Other human society;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;NA;NA
+3707;Hydrology;2;37;Earth Sciences;3707;Hydrology;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20705;Hydrology, Limnology, Glaciology
+3801;Applied economics;2;38;Economics;3801;Applied economics;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10203;Economics
+38;Economics;1;38;Economics;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4014;Manufacturing engineering;2;40;Engineering;4014;Manufacturing engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;NA;NA
+3204;Immunology;2;32;Biomedical and Clinical Sciences;3204;Immunology;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+4203;Health services and systems;2;42;Health Sciences;4203;Health services and systems;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10602;Health
+4301;Archaeology;2;43;History, Heritage and Archaeology;4301;Archaeology;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;10402;Archaeology
+37;Earth Sciences;1;37;Earth Sciences;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20800;Earth Sciences;20809;Other disciplines of Earth Sciences
+3901;Curriculum and pedagogy;2;39;Education;3901;Curriculum and pedagogy;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10104;Education and learning sciences, subject-specific education
+4612;Software engineering;2;46;Information and Computing Sciences;4612;Software engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+5004;Religious studies;2;50;Philosophy and Religious Studies;5004;Religious studies;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;10102;Religious studies, Theology
+4404;Development studies;2;44;Human Society;4404;Development studies;ANZSRC 2020;10000;Humanities and Social Sciences;10400;Ethnology, social and human geography;10206;Social geography and ecology
+3207;Medical microbiology;2;32;Biomedical and Clinical Sciences;3207;Medical microbiology;ANZSRC 2020;30000;Biology and Medicine;30300;Basic Medical Sciences;30307;Medical Microbiology
+3008;Horticultural production;2;30;Agricultural, Veterinary and Food Sciences;3008;Horticultural production;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30201;Botany
+5105;Medical and biological physics;2;51;Physical Sciences;5105;Medical and biological physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20409;Other disciplines of Physics
+4206;Public health;2;42;Health Sciences;4206;Public health;ANZSRC 2020;30000;Biology and Medicine;30900;Social Medicine;30911;Public Health and Health Services
+48;Law and Legal Studies;1;48;Law and Legal Studies;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+5201;Applied and developmental psychology;2;52;Psychology;5201;Applied and developmental psychology;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;NA;NA
+4806;Private law and civil obligations;2;48;Law and Legal Studies;4806;Private law and civil obligations;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+4018;Nanotechnology;2;40;Engineering;4018;Nanotechnology;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;NA;NA
+4099;Other engineering;2;40;Engineering;4099;Other engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20511;Other disciplines of Engineering Sciences
+4208;Traditional, complementary and integrative medicine;2;42;Health Sciences;4208;Traditional, complementary and integrative medicine;ANZSRC 2020;30000;Biology and Medicine;NA;NA;NA;NA
+4199;Other environmental sciences;2;41;Environmental Sciences;4199;Other environmental sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20709;Other disciplines of Environmental Sciences
+5204;Cognitive and computational psychology;2;52;Psychology;5204;Cognitive and computational psychology;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10105;Psychology
+3802;Econometrics;2;38;Economics;3802;Econometrics;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10203;Economics
+4012;Fluid mechanics and thermal engineering;2;40;Engineering;4012;Fluid mechanics and thermal engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20503;Fluid Dynamics
+4003;Biomedical engineering;2;40;Engineering;4003;Biomedical engineering;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30714;Biomedical Engineering
+4405;Gender studies;2;44;Human Society;4405;Gender studies;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;NA;NA
+4607;Graphics, augmented reality and games;2;46;Information and Computing Sciences;4607;Graphics, augmented reality and games;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4013;Geomatic engineering;2;40;Engineering;4013;Geomatic engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;NA;NA;NA;NA
+4801;Commercial law;2;48;Law and Legal Studies;4801;Commercial law;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+3803;Economic theory;2;38;Economics;3803;Economic theory;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10203;Economics
+4701;Communication and media studies;2;47;Language, Communication and Culture;4701;Communication and media studies;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10207;Communication sciences
+3509;Transportation, logistics and supply chains;2;35;Commerce, Management, Tourism and Services;3509;Transportation, logistics and supply chains;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+30;Agricultural, Veterinary and Food Sciences;1;30;Agricultural, Veterinary and Food Sciences;NA;NA;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;NA;NA
+3109;Zoology;2;31;Biological Sciences;3109;Zoology;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;30202;Zoology
+3599;Other commerce, management, tourism and services;2;35;Commerce, Management, Tourism and Services;3599;Other commerce, management, tourism and services;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+36;Creative Arts and Writing;1;36;Creative Arts and Writing;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;NA;NA
+3405;Organic chemistry;2;34;Chemical Sciences;3405;Organic chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;20304;Organic Chemistry
+5108;Quantum physics;2;51;Physical Sciences;5108;Quantum physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20401;Theoretical Physics
+3101;Biochemistry and cell biology;2;31;Biological Sciences;3101;Biochemistry and cell biology;ANZSRC 2020;30000;Biology and Medicine;30100;Basic Biological Research;NA;NA
+3701;Atmospheric sciences;2;37;Earth Sciences;3701;Atmospheric sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20704;Climatology. Atmospherical Chemistry, Aeronomy
+4403;Demography;2;44;Human Society;4403;Demography;ANZSRC 2020;10000;Humanities and Social Sciences;10400;Ethnology, social and human geography;10206;Social geography and ecology
+4805;Legal systems;2;48;Law and Legal Studies;4805;Legal systems;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+4803;International and comparative law;2;48;Law and Legal Studies;4803;International and comparative law;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;10205;Legal sciences
+46;Information and Computing Sciences;1;46;Information and Computing Sciences;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+3304;Urban and regional planning;2;33;Built Environment and Design;3304;Urban and regional planning;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10407;Architecture and Social urban science
+4604;Cybersecurity and privacy;2;46;Information and Computing Sciences;4604;Cybersecurity and privacy;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+49;Mathematical Sciences;1;49;Mathematical Sciences;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+4603;Computer vision and multimedia computation;2;46;Information and Computing Sciences;4603;Computer vision and multimedia computation;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4610;Library and information studies;2;46;Information and Computing Sciences;4610;Library and information studies;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+3099;Other agricultural, veterinary and food sciences;2;30;Agricultural, Veterinary and Food Sciences;3099;Other agricultural, veterinary and food sciences;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;NA;NA
+3002;Agriculture, land and farm management;2;30;Agricultural, Veterinary and Food Sciences;3002;Agriculture, land and farm management;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20709;Other disciplines of Environmental Sciences
+34;Chemical Sciences;1;34;Chemical Sciences;NA;NA;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;NA;NA
+4905;Statistics;2;49;Mathematical Sciences;4905;Statistics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+3005;Fisheries sciences;2;30;Agricultural, Veterinary and Food Sciences;3005;Fisheries sciences;ANZSRC 2020;30000;Biology and Medicine;30200;General Biology;NA;NA
+3506;Marketing;2;35;Commerce, Management, Tourism and Services;3506;Marketing;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+4004;Chemical engineering;2;40;Engineering;4004;Chemical engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20507;Chemical Engineering
+4105;Pollution and contamination;2;41;Environmental Sciences;4105;Pollution and contamination;ANZSRC 2020;30000;Biology and Medicine;30900;Social Medicine;30907;Environmental Toxicology
+4409;Social work;2;44;Human Society;4409;Social work;ANZSRC 2020;10000;Humanities and Social Sciences;10600;Sociology, social work, political sciences, media and communication studies, health;10601;Social work
+5005;Theology;2;50;Philosophy and Religious Studies;5005;Theology;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;10102;Religious studies, Theology
+43;History, Heritage and Archaeology;1;43;History, Heritage and Archaeology;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;10401;Prehistory
+3605;Screen and digital media;2;36;Creative Arts and Writing;3605;Screen and digital media;ANZSRC 2020;10000;Humanities and Social Sciences;10300;Art studies, musicology, theatre and film studies, architecture;10406;Theatre and Cinema
+3501;Accounting, auditing and accountability;2;35;Commerce, Management, Tourism and Services;3501;Accounting, auditing and accountability;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+47;Language, Communication and Culture;1;47;Language, Communication and Culture;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;NA;NA;NA;NA
+3203;Dentistry;2;32;Biomedical and Clinical Sciences;3203;Dentistry;ANZSRC 2020;30000;Biology and Medicine;30700;Clinical Medicine;30711;Dentistry
+3404;Medicinal and biomolecular chemistry;2;34;Chemical Sciences;3404;Medicinal and biomolecular chemistry;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20300;Chemistry;20304;Organic Chemistry
+4015;Maritime engineering;2;40;Engineering;4015;Maritime engineering;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20511;Other disciplines of Engineering Sciences
+3004;Crop and pasture production;2;30;Agricultural, Veterinary and Food Sciences;3004;Crop and pasture production;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20709;Other disciplines of Environmental Sciences
+35;Commerce, Management, Tourism and Services;1;35;Commerce, Management, Tourism and Services;NA;NA;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+5107;Particle and high energy physics;2;51;Physical Sciences;5107;Particle and high energy physics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20400;Physics;20403;Particle Physics
+3205;Medical biochemistry and metabolomics;2;32;Biomedical and Clinical Sciences;3205;Medical biochemistry and metabolomics;ANZSRC 2020;30000;Biology and Medicine;30300;Basic Medical Sciences;NA;NA
+4699;Other information and computing sciences;2;46;Information and Computing Sciences;4699;Other information and computing sciences;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+3503;Business systems in context;2;35;Commerce, Management, Tourism and Services;3503;Business systems in context;ANZSRC 2020;10000;Humanities and Social Sciences;10700;Economics, law;NA;NA
+4601;Applied computing;2;46;Information and Computing Sciences;4601;Applied computing;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20500;Engineering Sciences;20506;Information Technology
+4102;Ecological applications;2;41;Environmental Sciences;4102;Ecological applications;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20700;Environmental Sciences;20709;Other disciplines of Environmental Sciences
+3902;Education policy, sociology and philosophy;2;39;Education;3902;Education policy, sociology and philosophy;ANZSRC 2020;10000;Humanities and Social Sciences;10500;Psychology, educational studies;10104;Education and learning sciences, subject-specific education
+4202;Epidemiology;2;42;Health Sciences;4202;Epidemiology;ANZSRC 2020;30000;Biology and Medicine;30800;Preventive Medicine (Epidemiology/Early Diagnosis/Prevention);30812;Methods of Epidemiology and Preventive Medicine
+4903;Numerical and computational mathematics;2;49;Mathematical Sciences;4903;Numerical and computational mathematics;ANZSRC 2020;20000;Mathematics, Natural- and Engineering Sciences;20100;Mathematics;NA;NA
+4399;Other history, heritage and archaeology;2;43;History, Heritage and Archaeology;4399;Other history, heritage and archaeology;ANZSRC 2020;10000;Humanities and Social Sciences;10100;Theology & religious studies, history, classical studies, archaeology, prehistory and early history;10401;Prehistory

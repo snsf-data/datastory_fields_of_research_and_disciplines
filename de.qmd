@@ -1,0 +1,600 @@
+---
+title: "`r params$title`"
+format:
+  html:
+    # To use instead of self-contained that has been deprecated
+    # Using custom page layout (via 'style.css')
+    # Open link in a new window by default
+    # Display footnotes in pop-up window when hovering on it
+    toc: false
+    css: ["style.css"]
+    mainfont: Theinhardt
+    fontsize: "16px"
+    embed-resources: true
+    page-layout: custom
+    link-external-newwindow: true
+    footnotes-hover: true
+params:
+  title: ""
+  publication_date: ""
+  lang: "de"
+  doi: ""
+  github_url: ""
+editor_options:
+  chunk_output_type: console
+---
+
+```{r general-setup, include=FALSE}
+## This file contains the ENGLISH version of the data story
+
+# Set general chunk options
+knitr::opts_chunk$set(
+  echo = FALSE, fig.showtext = TRUE, fig.retina = 3, fig.align = "center",
+  warning = FALSE, message = FALSE
+)
+
+# Install snf.datastory package if not available, otherwise load it
+if (!require("snf.datastory")) {
+  if (!require("devtools")) {
+    install.packages("devtools")
+    library(devtools)
+  }
+  install_github("snsf-data/snf.datastory")
+  library(snf.datastory)
+}
+
+# Load packages
+library(tidyverse)
+library(lubridate)
+library(conflicted)
+library(jsonlite)
+library(here)
+library(showtext)
+library(systemfonts)
+library(plotly)
+library(DT)
+
+source(here("utils/sketch.R"))
+
+# Conflict preferences
+conflict_prefer("filter", "dplyr")
+conflict_prefer("get_datastory_theme", "snf.datastory")
+conflict_prefer("get_datastory_scheme", "snf.datastory")
+
+# Need if we want to use the registered font in ggiraph plots
+showtext_auto()
+
+# Increase showtext package font resolution
+showtext_opts(dpi = 320)
+
+# Set the locale for date formatting (Windows)
+Sys.setlocale(
+  "LC_TIME",
+  switch(
+    params$lang,
+    en = "English",
+    de = "German",
+    fr = "French"
+  )
+)
+
+# Create function to print number with local language-specific format
+print_num <- function(x) snf.datastory::print_num(x, lang = params$lang)
+
+# Knitr hook for local formatting of printed numbers
+knitr::knit_hooks$set(
+  inline <- function(x) {
+    if (!is.numeric(x)) {
+      x
+    } else {
+      print_num(x)
+    }
+  }
+)
+
+# Function that returns the desired language version of a string, given three
+# language strings are provided to the function.
+translate <- function(en_string = "NOT TRANSLATED",
+                      de_string = "NOT TRANSLATED",
+                      fr_string = "NOT TRANSLATED",
+                      lang = "en") {
+  
+  string <-
+    case_when(
+      lang == "en" ~ en_string,
+      lang == "de" ~ de_string,
+      lang == "fr" ~ fr_string,
+      TRUE ~ "NO VALID LANGUAGE SPECIFIED"
+    )
+  
+  return(string)
+  
+}
+
+```
+
+```{r print-header-infos}
+#| results: asis
+
+# Add publication date to header
+cat(format(as_datetime(params$publication_date), "%d.%m.%Y"))
+```
+
+**Mit dem SNF-Portal für die Einreichung von Fördergesuchen hat der SNF auch eine neue Klassifikation der Disziplinen eingeführt. Diese entspricht einem internationalen Standard und bietet mehrere Vorteile.**
+
+### Wozu dient die Einteilung nach Disziplinen?
+
+Wenn Forschende beim SNF ein Gesuch um Finanzierung einreichen, ordnen sie ihre Forschung einer oder mehreren wissenschaftlichen Disziplinen zu. Dies kann dem SNF helfen, passende Expertinnen und Experten für die Beurteilung des Forschungsprojekts zu suchen. Ausserdem verwendet er die angegebenen Disziplinen für die Analyse seiner Forschungsförderung.
+
+### Welches ist die bisherige Liste der Disziplinen?
+
+Auf der bisherigen Online-Plattform [mySNF](https://www.mysnf.ch/) wählen Forschende die Disziplinen für ihre Gesuche aus [einer vom SNF geschaffenen Liste](https://www.snf.ch/SiteCollectionDocuments/allg_disziplinenliste.pdf) aus. Seit 2022 löst das neue [SNF-Portal](https://portal.snf.ch/) schrittweise mySNF ab. Diese Gelegenheit hat der SNF genutzt, um eine neue Liste der Disziplinen einzuführen. Das SNF-Portal verwendet diese neue Liste, während mySNF die bisherige Liste beibehält.
+
+### Welches ist die neue Liste der Disziplinen?
+
+Die Liste führt die [Forschungsfelder auf (Fields of Research)](https://app.dimensions.ai/browse/categories/publication/for). Sie basiert auf der [Australian and New Zealand Standard Research Classification (ANZSRC)](https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc). Der SNF verwendet eine leicht angepasste Version, die von der international etablierten bibliometrischen Datenbank [Dimensions](https://www.dimensions.ai/) eingeführt wurde (vgl. [What is the background behind the Fields of Research (FoR) classification system?](https://plus.dimensions.ai/support/solutions/articles/23000018826-what-is-the-background-behind-the-fields-of-research-for-classification-system-)).
+
+### Warum hat sich der SNF für diese Liste entschieden? 
+
+Aus mehreren Gründen: Die Liste wurde zum einen gewählt, weil die bibliometrische Datenbank Dimensions sie als Hauptklassifikation benutzt. Indem der SNF diesen Standard verwendet, fügen sich die Disziplinen seines Förderportfolios besser in den internationalen Kontext ein. Zum andern arbeiten verschiedene Prozesse der SNF-Forschungsförderung mit Daten von Dimensions. Dazu gehört ein Hilfsmittel bei der Suche nach externen Expertinnen und Experten, das neben dem wissenschaftlichen Teil der Gesuche auch die Disziplinen berücksichtigt. Es liefert präzisere Resultate, wenn die von den Forschenden direkt eingegebenen Disziplinen verwendet werden. Ausserdem weist die neue Liste einen ähnlichen Detaillierungsgrad auf wie die bisherige mySNF-Liste.
+
+### Was sind die Unterschiede?
+
+Die [Disziplinen-Klassifikation von mySNF](https://www.snf.ch/media/en/Ii1WiTqVDFTDp5ts/allg_disziplinenliste.pdf) hat drei hierarchische Ebenen, während die im SNF-Portal verwendeten Forschungsfelder zwei haben. Die höchste hierarchische Ebene der mySNF-Klassifikation besteht aus drei Gebieten: Geistes- und Sozialwissenschaften (GSW), Mathematik, Informatik, Naturwissenschaft, Technik (MINT) und Lebenswissenschaften (LW). Zu dieser höchsten Ebene gibt es in den Forschungsfeldern keine Entsprechung. Stattdessen entspricht die höhere Ebene der im SNF-Portal verwendeten Forschungsfelder in ihrem Detaillierungsgrad ungefähr der mittleren Ebene der mySNF-Disziplinen.
+
+Der SNF hat die Listen einander zugeordnet (siehe Grafik unten und die herunterladbaren [Datensätze](https://data.snf.ch/datasets)). Aus SNF-internen Gründen ist jedes Forschungsfeld einem der drei Gebiete auf der höchsten hierarchischen Ebene zugeordnet (GSW, MINT, LW; siehe Grafik unten).
+
+Zwischen den beiden Listen bestehen verschiedene disziplinenspezifische Unterschiede. In einigen Fachgebieten sind die Forschungsfelder feiner ausdifferenziert als die mySNF-Disziplinen, beispielsweise in der Mathematik. In anderen Fachgebieten ist es umgekehrt, etwa in der Geschichte. Solche Unterschiede bedeuten keine Neubewertung der Disziplinen im SNF-Portfolio – es handelt sich lediglich um eine neue Klassifikation.
+
+::: {.widemedia .hide-mobile .hide-tablet}
+::: plot-box
+<div class="plot-title">Wie sind die Forschungsfelder den drei Gebieten GSW, MINT und LW zugeordnet?</div>
+```{r}
+#| fig-height: 12.5
+
+for_disc_mapping <- read_csv2("data/for_snsf_disc_mapping.csv")
+
+snsf_disc <- read_csv2("data/snsf_disciplines")
+
+n_l1 <- 23
+
+unique_for_disc <-
+  for_disc_mapping |>
+  mutate(
+    Level1_Discipline =
+      fct(
+        case_match(
+          Level1_Discipline,
+          "Mathematics, Natural- and Engineering Sciences" ~ "MINT",
+          "Humanities and Social Sciences" ~ switch(params$lang, en = "SSH", de = "GSW", fr = "SHS"),
+          "Biology and Medicine" ~ switch(params$lang, en = "LS", de = "LW", fr = "SV"),
+        ),
+        levels =
+          switch(
+            params$lang,
+            en = c("SSH", "MINT", "LS"),
+            de = c("GSW", "MINT", "LW"),
+            fr = c("SHS", "MINT", "SV")
+          )
+      ),
+    Level3_Discipline = case_when(
+      Level2_Discipline == "Astronomy, Astrophysics and Space Sciences" ~
+        "Astronomy, Astrophysics and Space Sciences",
+      Level2_Discipline == "Mathematics" ~
+        "Mathematics",
+      .default = Level3_Discipline
+    ),
+    Level3_Number = case_when(
+      Level2_Discipline == "Astronomy, Astrophysics and Space Sciences" ~ 20200,
+      Level2_Discipline == "Mathematics" ~ 20100,
+      .default = Level3_Number
+    )
+  ) |>
+  distinct(
+    Number,
+    Level1_Discipline,
+    Level3_Discipline,
+    LevelA_FieldOfResearch,
+    LevelB_FieldOfResearch,
+    Level3_Number
+  ) |>
+  left_join(
+    snsf_disc,
+    by = join_by(Level3_Number == Number)
+  ) |>
+  mutate(
+    Level3_Discipline =
+      case_when(
+        params$lang == "en" ~ Level3_Discipline,
+        params$lang == "de" ~ Level3_Discipline_De,
+        params$lang == "fr" ~ Level3_Discipline_Fr
+      ),
+    Level3_Discipline =
+      if_else(
+        is.na(Level3_Discipline) & !is.na(LevelB_FieldOfResearch),
+        paste0(
+          switch(
+            params$lang,
+            en = "Other ",
+            de = "Andere ",
+            fr = "Autre "
+          ),
+          Level1_Discipline), Level3_Discipline
+      )
+  ) |> 
+  drop_na(
+    Level3_Discipline,
+    LevelB_FieldOfResearch
+  ) |>
+  mutate(
+    LevelA_FieldOfResearch =
+      fct_reorder(
+        LevelA_FieldOfResearch,
+        as.numeric(Level1_Discipline) * 1000 + as.numeric(fct(LevelA_FieldOfResearch))
+      )
+  ) |>
+  mutate(
+    target = as.numeric(Level1_Discipline) + (n_l1 - 2),
+    source = as.numeric(LevelA_FieldOfResearch) - 1,
+    label =
+      paste0(
+        "<b>FoR</b>: ",
+        LevelB_FieldOfResearch,
+        "<b><br>",
+        switch(params$lang, en = "SNSF", de = "SNF", fr = "FNS"),
+        "</b>: ",
+        Level3_Discipline
+      ),
+    value = 1
+  )
+
+l1_cat <- levels(unique_for_disc$Level1_Discipline)
+for_a_cat <- levels(unique_for_disc$LevelA_FieldOfResearch)
+
+plot_ly(
+  type = "sankey",
+  orientation = "h",
+  
+  textfont = list(size = 13.5),
+  
+  node = list(
+    hovertemplate = "<extra></extra>",
+    label =
+      c(
+        for_a_cat,
+        l1_cat
+      ),
+    color = c(rep("#444", length(for_a_cat)), get_datastory_scheme(n_col = 3)),
+    pad = 15,
+    thickness = 20,
+    line = list(
+      color = "white",
+      width = 0.5
+    )
+  ),
+  
+  link = list(
+    color = alpha(get_datastory_scheme()[unique_for_disc$target - (n_l1 - 2)], 0.5),
+    hovertemplate = "%{label}<extra></extra>",
+    hoverlabel = list(align = "left"),
+    source = unique_for_disc$source,
+    target = unique_for_disc$target,
+    value =  unique_for_disc$value,
+    label = unique_for_disc$label,
+    line = list(
+      color = "white",
+      width = 0.5
+    )
+  )
+) |>
+  plotly::layout(
+    font = list(family = "Theinhardt"),
+    showlegend = FALSE,
+    xaxis = list(
+      showgrid = FALSE,
+      visible = FALSE,
+      zeroline = FALSE
+    ),
+    yaxis = list(
+      showgrid = FALSE,
+      visible = FALSE,
+      zeroline = FALSE
+    )
+  ) |>
+  config(displayModeBar = FALSE)
+
+
+```
+:::
+<p></p>
+::: plot-box
+<div class="plot-title">Wie sind die mySNF-Disziplinen den Forschungsfeldern zugeordnet?</div>
+```{r}
+
+dat_for_dt <-
+  select(
+    unique_for_disc,
+    Level1_Discipline,
+    Level3_Discipline,
+    LevelA_FieldOfResearch,
+    LevelB_FieldOfResearch
+  ) |>
+  arrange(
+    Level1_Discipline,
+    Level3_Discipline,
+    LevelA_FieldOfResearch,
+    LevelB_FieldOfResearch
+  ) |>
+  rename(
+    `SNSF discipline` = Level3_Discipline,
+    `Field of Research<br>Level B` = LevelB_FieldOfResearch,
+    `Field of Research<br>Level A` = LevelA_FieldOfResearch,
+    `SNSF research area` = Level1_Discipline
+  )
+
+tbl_lang <-
+  fromJSON(
+    paste0(
+      here(
+        "utils",
+        switch(params$lang, en = "en.json", de = "de.json", fr = "fr.json")
+      )
+    )
+  )
+
+DT::datatable(
+  dat_for_dt,
+  class = c("stripe", "hover"),
+  container = make_sketch(params$lang),
+  rownames = FALSE,
+  escape = FALSE,
+  options =
+    list(
+      pageLength = 5,
+      language = tbl_lang
+    )
+)
+
+```
+:::
+<p></p>
+:::
+
+::: {.hide-desktop}
+::: plot-box
+<div class="plot-title">Wie sind die Forschungsfelder den drei Gebieten GSW, MINT und LW zugeordnet?</div>
+```{r}
+#| fig-height: 12.5
+
+for_disc_mapping <- read_csv2("data/for_snsf_disc_mapping.csv")
+
+snsf_disc <- read_csv2("data/snsf_disciplines")
+
+n_l1 <- 23
+
+unique_for_disc <-
+  for_disc_mapping |>
+  mutate(
+    Level1_Discipline =
+      fct(
+        case_match(
+          Level1_Discipline,
+          "Mathematics, Natural- and Engineering Sciences" ~ "MINT",
+          "Humanities and Social Sciences" ~ switch(params$lang, en = "SSH", de = "GSW", fr = "SHS"),
+          "Biology and Medicine" ~ switch(params$lang, en = "LS", de = "LW", fr = "SV"),
+        ),
+        levels =
+          switch(
+            params$lang,
+            en = c("SSH", "MINT", "LS"),
+            de = c("GSW", "MINT", "LW"),
+            fr = c("SHS", "MINT", "SV")
+          )
+      ),
+    Level3_Discipline = case_when(
+      Level2_Discipline == "Astronomy, Astrophysics and Space Sciences" ~
+        "Astronomy, Astrophysics and Space Sciences",
+      Level2_Discipline == "Mathematics" ~
+        "Mathematics",
+      .default = Level3_Discipline
+    ),
+    Level3_Number = case_when(
+      Level2_Discipline == "Astronomy, Astrophysics and Space Sciences" ~ 20200,
+      Level2_Discipline == "Mathematics" ~ 20100,
+      .default = Level3_Number
+    )
+  ) |>
+  distinct(
+    Number,
+    Level1_Discipline,
+    Level3_Discipline,
+    LevelA_FieldOfResearch,
+    LevelB_FieldOfResearch,
+    Level3_Number
+  ) |>
+  left_join(
+    snsf_disc,
+    by = join_by(Level3_Number == Number)
+  ) |>
+  mutate(
+    Level3_Discipline =
+      case_when(
+        params$lang == "en" ~ Level3_Discipline,
+        params$lang == "de" ~ Level3_Discipline_De,
+        params$lang == "fr" ~ Level3_Discipline_Fr
+      ),
+    Level3_Discipline =
+      if_else(
+        is.na(Level3_Discipline) & !is.na(LevelB_FieldOfResearch),
+        paste0(
+          switch(
+            params$lang,
+            en = "Other ",
+            de = "Andere ",
+            fr = "Autre "
+          ),
+          Level1_Discipline), Level3_Discipline
+      )
+  ) |> 
+  drop_na(
+    Level3_Discipline,
+    LevelB_FieldOfResearch
+  ) |>
+  mutate(
+    LevelA_FieldOfResearch =
+      fct_reorder(
+        LevelA_FieldOfResearch,
+        as.numeric(Level1_Discipline) * 1000 + as.numeric(fct(LevelA_FieldOfResearch))
+      )
+  ) |>
+  mutate(
+    target = as.numeric(Level1_Discipline) + (n_l1 - 2),
+    source = as.numeric(LevelA_FieldOfResearch) - 1,
+    label =
+      paste0(
+        "<b>FoR</b>: ",
+        LevelB_FieldOfResearch,
+        "<b><br>",
+        switch(params$lang, en = "SNSF", de = "SNF", fr = "FNS"),
+        "</b>: ",
+        Level3_Discipline
+      ),
+    value = 1
+  )
+
+l1_cat <- levels(unique_for_disc$Level1_Discipline)
+for_a_cat <- levels(unique_for_disc$LevelA_FieldOfResearch)
+
+plot_ly(
+  type = "sankey",
+  orientation = "h",
+  
+  textfont = list(size = 13.5),
+  
+  node = list(
+    hovertemplate = "<extra></extra>",
+    label =
+      c(
+        for_a_cat,
+        l1_cat
+      ),
+    color = c(rep("#444", length(for_a_cat)), get_datastory_scheme(n_col = 3)),
+    pad = 15,
+    thickness = 20,
+    line = list(
+      color = "white",
+      width = 0.5
+    )
+  ),
+  
+  link = list(
+    color = alpha(get_datastory_scheme()[unique_for_disc$target - (n_l1 - 2)], 0.5),
+    hovertemplate = "%{label}<extra></extra>",
+    hoverlabel = list(align = "left"),
+    source = unique_for_disc$source,
+    target = unique_for_disc$target,
+    value =  unique_for_disc$value,
+    label = unique_for_disc$label,
+    line = list(
+      color = "white",
+      width = 0.5
+    )
+  )
+) |>
+  plotly::layout(
+    font = list(family = "Theinhardt"),
+    showlegend = FALSE,
+    xaxis = list(
+      showgrid = FALSE,
+      visible = FALSE,
+      zeroline = FALSE
+    ),
+    yaxis = list(
+      showgrid = FALSE,
+      visible = FALSE,
+      zeroline = FALSE
+    )
+  ) |>
+  config(displayModeBar = FALSE)
+
+
+```
+:::
+<p></p>
+::: plot-box
+<div class="plot-title">Wie sind die mySNF-Disziplinen den Forschungsfeldern zugeordnet?</div>
+```{r}
+
+dat_for_dt <-
+  select(
+    unique_for_disc,
+    Level1_Discipline,
+    Level3_Discipline,
+    LevelA_FieldOfResearch,
+    LevelB_FieldOfResearch
+  ) |>
+  arrange(
+    Level1_Discipline,
+    Level3_Discipline,
+    LevelA_FieldOfResearch,
+    LevelB_FieldOfResearch
+  ) |>
+  rename(
+    `SNSF discipline` = Level3_Discipline,
+    `Field of Research<br>Level B` = LevelB_FieldOfResearch,
+    `Field of Research<br>Level A` = LevelA_FieldOfResearch,
+    `SNSF research area` = Level1_Discipline
+  )
+
+tbl_lang <-
+  fromJSON(
+    paste0(
+      here(
+        "utils",
+        switch(params$lang, en = "en.json", de = "de.json", fr = "fr.json")
+      )
+    )
+  )
+
+DT::datatable(
+  dat_for_dt,
+  class = c("stripe", "hover"),
+  container = make_sketch(params$lang),
+  rownames = FALSE,
+  escape = FALSE,
+  options =
+    list(
+      pageLength = 5,
+      language = tbl_lang
+    )
+)
+
+```
+:::
+<p></p>
+:::
+
+### Was, wenn SNF-Forschende ihre Disziplin nicht mehr finden?
+
+Sollte die bisher in mySNF verwendete Disziplin in der neuen Liste nicht mehr vorhanden sein, geben Forschende einfach die zu ihrer Forschungsarbeit passende Disziplin an. Im SNF-Portal gibt es auch die Möglichkeit, bei Bedarf mehrere Hauptdisziplinen zu wählen, was in mySNF nicht möglich ist. Zu beachten ist, dass die Disziplinen nur eines von mehreren Mitteln sind, die der SNF zur Kategorisierung der Fördergesuche verwendet. Nach wie vor spielen auch die Schlagwörter eine wichtige Rolle und für eine feinere Beurteilung die Zusammenfassung sowie der Projektbeschrieb.
+
+### Wann findet der Wechsel statt?
+Alle über das SNF-Portal eingereichten Gesuche verwenden die Forschungsfelder. Die Umstellung von mySNF auf das SNF-Portal geschieht schrittweise pro Förderinstrument. Diejenigen Förderinstrumente, deren Ausschreibungen immer noch in mySNF stattfinden, verwenden weiterhin die bisherige Disziplinen-Klassifikation von mySNF.
+
+
+Daten, Text und Code dieser Datengeschichte sind [auf Github verfügbar](`r params$github_url`) und [auf Zenodo archiviert](`r params$doi`).<br>DOI: `r str_remove(params$doi, "https://doi.org/")`
+
+```{r prevent-internal-snsf-packages, include=FALSE}
+#| include: false
+
+# Internal SNSF packages must not be used in data stories, as their
+# pre-processing functions are internal and the corporate design differs from
+# the data portal.
+if (any(c("snfverse", "snf.preprocessing", "snf.plot") %in%
+        loadedNamespaces())) {
+  stop(glue(
+    "You must not use internal SNSF packages in data stories.",
+    " Please resort to snf.datastory."
+  ))
+}
+```
