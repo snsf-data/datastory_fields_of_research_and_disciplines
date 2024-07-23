@@ -30,8 +30,12 @@ editor_options:
 
 # Set general chunk options
 knitr::opts_chunk$set(
-  echo = FALSE, fig.showtext = TRUE, fig.retina = 3, fig.align = "center",
-  warning = FALSE, message = FALSE
+  echo = FALSE,
+  fig.showtext = TRUE,
+  fig.retina = 3,
+  fig.align = "center",
+  warning = FALSE,
+  message = FALSE
 )
 
 # Install snf.datastory package if not available, otherwise load it
@@ -148,7 +152,7 @@ The list presents the [Fields of Research (FoR)](https://app.dimensions.ai/brows
 
 ### Why did the SNSF decide in favour of this list?
 
-This decision was made for several reasons. Firstly, the SNSF chose the list because the  bibliometric database uses it as its main classification. Adopting an international standard enables the SNSF funding portfolio to be better understood in a global context. Further, various SNSF research funding processes use data from Dimensions. This includes a tool for the search for external experts that takes into account the specified disciplines as well as the scientific part of the applications. Its results are more precise if the disciplines entered directly by the researchers are used. In addition, the new list of disciplines has a similar level of detail to the previous mySNF list.
+This decision was made for several reasons. Firstly, the SNSF chose the list because the Dimensions bibliometric database uses it as its main classification. Adopting an international standard enables the SNSF funding portfolio to be better understood in a global context. Further, various SNSF research funding processes use data from Dimensions. This includes a tool for the search for external experts that takes into account the specified disciplines as well as the scientific part of the applications. Its results are more precise if the disciplines entered directly by the researchers are used. In addition, the new list of disciplines has a similar level of detail to the previous mySNF list.
 
 ### What are the differences?
 

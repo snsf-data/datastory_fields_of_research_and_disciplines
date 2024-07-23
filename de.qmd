@@ -25,12 +25,17 @@ editor_options:
 ---
 
 ```{r general-setup, include=FALSE}
+
 ## This file contains the ENGLISH version of the data story
 
 # Set general chunk options
 knitr::opts_chunk$set(
-  echo = FALSE, fig.showtext = TRUE, fig.retina = 3, fig.align = "center",
-  warning = FALSE, message = FALSE
+  echo = FALSE,
+  fig.showtext = TRUE,
+  fig.retina = 3,
+  fig.align = "center",
+  warning = FALSE,
+  message = FALSE
 )
 
 # Install snf.datastory package if not available, otherwise load it
@@ -97,7 +102,7 @@ knitr::knit_hooks$set(
 translate <- function(en_string = "NOT TRANSLATED",
                       de_string = "NOT TRANSLATED",
                       fr_string = "NOT TRANSLATED",
-                      lang = "en") {
+                      lang = "de") {
   
   string <-
     case_when(

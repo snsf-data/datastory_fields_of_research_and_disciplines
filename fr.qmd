@@ -30,8 +30,12 @@ editor_options:
 
 # Set general chunk options
 knitr::opts_chunk$set(
-  echo = FALSE, fig.showtext = TRUE, fig.retina = 3, fig.align = "center",
-  warning = FALSE, message = FALSE
+  echo = FALSE,
+  fig.showtext = TRUE,
+  fig.retina = 3,
+  fig.align = "center",
+  warning = FALSE,
+  message = FALSE
 )
 
 # Install snf.datastory package if not available, otherwise load it
@@ -98,7 +102,7 @@ knitr::knit_hooks$set(
 translate <- function(en_string = "NOT TRANSLATED",
                       de_string = "NOT TRANSLATED",
                       fr_string = "NOT TRANSLATED",
-                      lang = "en") {
+                      lang = "fr") {
   
   string <-
     case_when(
@@ -137,7 +141,7 @@ La nouvelle liste recense les [champs de recherche (Fields of Research)](https:/
 
 ### Pour quelles raisons le FNS a-t-il retenu cette liste ?
 
-Plusieurs raisons expliquent ce choix. Cette liste, le FNS l’a plébiscitée, parce qu’elle est utilisée comme classification principale dans la base de données bibliométriques [Dimensions](https://www.dimensions.ai/). L’adoption d’un standard international permet de mieux comprendre le portefeuille d’instruments du FNS dans un contexte global. En outre, le FNS utilise d’ores et déjà des données de Dimensions dans plusieurs de ses processus d’encouragement de la recherche, notamment dans un outil d’aide à la recherche d’expertes et d’experts externes qui considère, outre la partie scientifique de la requête, les disciplines étudiées. Force est de constater que les résultats gagnent en précision lorsque les chercheuses et chercheurs renseignent directement les disciplines. Qui plus est, la nouvelle liste des disciplines présente un degré de détail similaire à celui de la liste mySNF utilisée jusqu’à présent.
+Plusieurs raisons expliquent ce choix. Cette liste, le FNS l’a plébiscitée, parce qu’elle est utilisée comme classification principale dans la base de données bibliométriques Dimensions. L’adoption d’un standard international permet de mieux comprendre le portefeuille d’instruments du FNS dans un contexte global. En outre, le FNS utilise d’ores et déjà des données de Dimensions dans plusieurs de ses processus d’encouragement de la recherche, notamment dans un outil d’aide à la recherche d’expertes et d’experts externes qui considère, outre la partie scientifique de la requête, les disciplines étudiées. Force est de constater que les résultats gagnent en précision lorsque les chercheuses et chercheurs renseignent directement les disciplines. Qui plus est, la nouvelle liste des disciplines présente un degré de détail similaire à celui de la liste mySNF utilisée jusqu’à présent.
 
 ### En quoi les deux listes se distinguent-elles ?
 
@@ -147,7 +151,7 @@ Le FNS a établi une correspondance entre les listes (cf. graphique ci-après et
 
 ::: {.widemedia .hide-mobile .hide-tablet}
 ::: plot-box
-<div class="plot-title">Comment les champs de recherche sont-ils attribués aux trois domaines utilisés par le FNS (SHS, MINT, LS) ?</div>
+<div class="plot-title">Comment les champs de recherche sont-ils attribués aux trois domaines utilisés par le FNS (SHS, MINT, SV) ?</div>
 ```{r}
 #| fig-height: 12.5
 
@@ -361,7 +365,7 @@ DT::datatable(
 
 ::: {.hide-desktop}
 ::: plot-box
-<div class="plot-title">Comment les champs de recherche sont-ils attribués aux trois domaines utilisés par le FNS (SHS, MINT, LS) ?</div>
+<div class="plot-title">Comment les champs de recherche sont-ils attribués aux trois domaines utilisés par le FNS (SHS, MINT, SV) ?</div>
 ```{r}
 #| fig-height: 12.5
 
