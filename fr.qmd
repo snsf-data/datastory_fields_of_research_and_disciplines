@@ -149,6 +149,8 @@ La [classification des disciplines de mySNF](https://www.snf.ch/media/en/Ii1WiTq
 
 Le FNS a établi une correspondance entre les listes (cf. graphique ci-après et les [ensembles de données téléchargeables](https://data.snf.ch/datasets)). Pour des raisons internes au FNS, chaque champ de recherche est rattaché à l’un des trois domaines du niveau hiérarchique supérieur (SHS, MINT, SV; cf. graphique ci-après).
 
+Plusieurs différences intrinsèques aux disciplines existent entre les deux listes. Dans certains cas, les domaines de recherche du Portail FNS bénéficient d’un degré de détail supérieur à celui utilisé dans les disciplines mySNF, notamment en mathématiques. Dans d’autres domaines spécialisés, c’est l’inverse qui prévaut, notamment en histoire. Ces différences ne s’expliquent pas par une nouvelle évaluation des disciplines dans le portefeuille du FNS, mais résultent simplement d’une nouvelle classification.
+
 ::: {.widemedia .hide-mobile .hide-tablet}
 ::: plot-box
 <div class="plot-title">Comment les champs de recherche sont-ils attribués aux trois domaines utilisés par le FNS (SHS, MINT, SV) ?</div>
